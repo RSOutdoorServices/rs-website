@@ -95,16 +95,17 @@ body {
 
 .services-highlights-container {
     display: flex;
-    justify-content: space-around;
-    width: 80%;
-    max-width: 1200px;
+    justify-content: space-between; /* Changed to space-between */
+    width: 95%; /* Increased width */
+    max-width: 1400px; /* Increased max width */
     margin: 30px auto;
 }
 
 .before-after-container {
     position: relative;
-    width: 40%;
+    width: 30%; /* Reduced width */
     text-align: center;
+    margin-left: 10px; /* Added margin */
 }
 
 .before-image-container {
@@ -121,8 +122,11 @@ body {
 
 .after-image {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 10px; /* Adjust top position */
+    left: 10px; /* Adjust left position */
+    width: calc(100% - 20px); /* Adjust width */
+    height: calc(100% - 20px); /* Adjust height */
+    z-index: -1; /* Place behind before image */
     transition: opacity 0.5s ease;
     opacity: 0;
 }
@@ -140,11 +144,20 @@ body {
     border-radius: 5px;
 }
 
+.highlights-text {
+    width: 20%; /* Added text container */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .horizontal-scroll-container {
-    width: 40%;
+    width: 30%; /* Reduced width */
     overflow-y: auto;
     max-height: 400px;
     position: relative;
+    margin-right: 10px; /* Added margin */
 }
 
 .horizontal-scroll-images {
