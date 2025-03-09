@@ -1,0 +1,136 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#siteHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    padding: 20px;
+}
+
+#siteLogo {
+    height: 60px;
+}
+
+#siteName {
+    font-size: 28px;
+    color: #333333;
+    margin: 0;
+}
+
+#mainMenu a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333333;
+    font-size: 16px;
+}
+
+#heroSection {
+    background-image: url('placeholder-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 150px 0;
+    position: relative;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000040;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+#heroHeadline {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+#heroParagraph {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+#heroButton {
+    background-color: #007BFF;
+    color: #FFFFFF;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+#aboutUsSection, #servicesSection, #callToActionSection, #contactUsSection{
+    padding: 50px 0;
+    text-align: center;
+}
+
+#aboutUsSection {
+    background-color: #F9F9F9;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-images {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.about-images img {
+    width: 300px;
+    margin: 0 20px;
+}
+
+.repeater {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.repeater-item {
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+}
+
+.repeater-item img {
+    width: 100%;
+    height: auto;
+}
+
+#callToActionSection {
+    background-color: #007BFF;
+    color: #FFFFFF;
+}
+
+#callToActionbutton {
+    background-color: #FFFFFF;
+    color: #007BFF;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+form {
+  display: inline-block;
+  text-align: left;
+}
