@@ -2,13 +2,14 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+    color: #333; /* Darker text for readability */
 }
 
 #siteHeader {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #FFFFFF;
+    background-color: #f8f8f8; /* Lighter header background */
     padding: 20px;
 }
 
@@ -18,14 +19,14 @@ body {
 
 #siteName {
     font-size: 28px;
-    color: #333333;
+    color: #4CAF50; /* Green primary color */
     margin: 0;
 }
 
 #mainMenu a {
     margin-left: 20px;
     text-decoration: none;
-    color: #333333;
+    color: #555;
     font-size: 16px;
 }
 
@@ -33,7 +34,7 @@ body {
     background-image: url('background1.png');
     background-size: cover;
     background-position: center;
-    color: #FFFFFF;
+    color: #fff;
     text-align: center;
     padding: 150px 0;
     position: relative;
@@ -45,8 +46,8 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #00000040;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)); /* Gradient Overlay */
+    background-color: rgba(0, 0, 0, 0.3); /* Slightly darker overlay */
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(60, 100, 40, 0.5)); /* Greenish gradient */
 }
 
 .hero-content {
@@ -65,8 +66,8 @@ body {
 }
 
 #heroButton {
-    background-color: #007BFF;
-    color: #FFFFFF;
+    background-color: #4CAF50; /* Green button */
+    color: #fff;
     padding: 15px 30px;
     text-decoration: none;
     border-radius: 5px;
@@ -82,8 +83,8 @@ body {
     background-image: url('background1.png');
     background-size: cover;
     background-position: center;
-    color: #FFFFFF;
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)); /* Gradient Overlay */
+    color: #fff;
+    background-image: linear-gradient(to top, rgba(60, 100, 40, 0.5), rgba(0, 0, 0, 0.3)); /* Greenish gradient */
 }
 
 .container {
@@ -96,36 +97,36 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 30px;
-    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    flex-wrap: wrap;
 }
 
 .service-highlight {
     width: 300px;
     margin: 20px;
     text-align: center;
-    background-color: #f9f9f9;
+    background-color: #f0f8f0; /* Very light green background */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .service-highlight:hover {
-    transform: translateY(-5px); /* Slight lift on hover */
+    transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .service-highlight img {
     width: 100%;
     height: auto;
-    border-radius: 8px; /* Rounded image corners */
+    border-radius: 8px;
     margin-bottom: 15px;
 }
 
 .service-highlight h4 {
     font-size: 20px;
     margin-bottom: 10px;
-    color: #333;
+    color: #4CAF50; /* Green titles */
 }
 
 .service-highlight p {
@@ -136,8 +137,8 @@ body {
 }
 
 .service-highlight a {
-    background-color: #007BFF;
-    color: #FFFFFF;
+    background-color: #4CAF50; /* Green buttons */
+    color: #fff;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
@@ -146,17 +147,17 @@ body {
 }
 
 .service-highlight a:hover {
-    background-color: #0056b3;
+    background-color: #388E3C;
 }
 
 #callToActionSection {
-    background-color: #007BFF;
-    color: #FFFFFF;
+    background-color: #8BC34A; /* Lighter green footer */
+    color: #fff;
 }
 
 #callToActionbutton {
-    background-color: #FFFFFF;
-    color: #007BFF;
+    background-color: #fff;
+    color: #8BC34A;
     padding: 15px 30px;
     text-decoration: none;
     border-radius: 5px;
