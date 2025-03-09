@@ -1,12 +1,12 @@
 document.addEventListener('DOMContentLoaded', function() {
     let items = [
         {
-            "serviceImage": "placeholder-service1.jpg",
+            "serviceImage": "IMG_2147.jpg", //Before picture
             "serviceTitle": "Lawn Care",
             "serviceDescription": "Professional lawn mowing and maintenance services."
         },
         {
-            "serviceImage": "placeholder-service2.jpg",
+            "serviceImage": "IMG_2163.jpg", //After picture
             "serviceTitle": "Landscape Design",
             "serviceDescription": "Custom landscape design and installation."
         },
