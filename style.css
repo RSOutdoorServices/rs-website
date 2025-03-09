@@ -2,24 +2,24 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    color: #333; /* Darker text for readability */
+    color: #333;
 }
 
 #siteHeader {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #f8f8f8; /* Lighter header background */
+    background-color: #f8f8f8;
     padding: 20px;
 }
 
 #siteLogo {
-    height: 80px;
+    height: 60px;
 }
 
 #siteName {
-    font-size: 78px;
-    color: #4CAF50; /* Green primary color */
+    font-size: 28px;
+    color: #4CAF50;
     margin: 0;
 }
 
@@ -46,8 +46,8 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.3); /* Slightly darker overlay */
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(60, 100, 40, 0.5)); /* Greenish gradient */
+    background-color: rgba(0, 0, 0, 0.3);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(60, 100, 40, 0.5));
 }
 
 .hero-content {
@@ -66,7 +66,7 @@ body {
 }
 
 #heroButton {
-    background-color: #4CAF50; /* Green button */
+    background-color: #4CAF50;
     color: #fff;
     padding: 15px 30px;
     text-decoration: none;
@@ -84,7 +84,7 @@ body {
     background-size: cover;
     background-position: center;
     color: #fff;
-    background-image: linear-gradient(to top, rgba(60, 100, 40, 0.5), rgba(0, 0, 0, 0.3)); /* Greenish gradient */
+    background-image: linear-gradient(to top, rgba(60, 100, 40, 0.5), rgba(0, 0, 0, 0.3));
 }
 
 .container {
@@ -93,65 +93,102 @@ body {
     margin: 0 auto;
 }
 
-.services-highlights {
+.services-highlights-container {
     display: flex;
-    justify-content: center;
-    margin-top: 30px;
-    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80%;
+    max-width: 1200px;
+    margin: 30px auto;
 }
 
-.service-highlight {
-    width: 300px;
-    margin: 20px;
+.before-after-container {
+    position: relative;
+    width: 40%;
     text-align: center;
-    background-color: #f0f8f0; /* Very light green background */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.service-highlight:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+.before-image-container {
+    position: relative;
+    overflow: hidden;
+    max-width: 400px;
+    margin: 0 auto;
 }
 
-.service-highlight img {
+#beforeImage, #afterImage {
     width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 15px;
+    display: block;
 }
 
-.service-highlight h4 {
-    font-size: 20px;
-    margin-bottom: 10px;
-    color: #4CAF50; /* Green titles */
+.after-image {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: opacity 0.5s ease;
+    opacity: 0;
 }
 
-.service-highlight p {
-    font-size: 16px;
-    color: #666;
-    line-height: 1.5;
-    margin-bottom: 15px;
-}
-
-.service-highlight a {
-    background-color: #4CAF50; /* Green buttons */
+.image-toggle-button {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background-color: #4CAF50;
     color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
     border-radius: 5px;
-    font-weight: 600;
-    transition: background-color 0.3s ease;
 }
 
-.service-highlight a:hover {
-    background-color: #388E3C;
+.horizontal-scroll-container {
+    width: 40%;
+    overflow-y: auto;
+    max-height: 400px;
+    position: relative;
+}
+
+.horizontal-scroll-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s linear;
+}
+
+.horizontal-scroll-images img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.scroll-speed-control {
+    position: absolute;
+    right: -20px;
+    top: 0;
+    height: 100%;
+    transform: rotate(-90deg);
+    transform-origin: top right;
+    width: 20px;
+}
+
+/* Custom Scrollbar Styling (Webkit Browsers) */
+.horizontal-scroll-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.horizontal-scroll-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.horizontal-scroll-container::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+.horizontal-scroll-container::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
 
 #callToActionSection {
-    background-color: #8BC34A; /* Lighter green footer */
+    background-color: #8BC34A;
     color: #fff;
 }
 

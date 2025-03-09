@@ -36,18 +36,23 @@
     <section id="servicesHighlightsSection">
         <div class="container">
             <h3 id="servicesHighlightsHeading">Service Highlights</h3>
-            <div class="services-highlights">
-                <div class="service-highlight">
-                    <img src="IMG_2147.jpg" alt="Lawn Care">
-                    <h4>Lawn Care</h4>
-                    <p>Professional lawn mowing and maintenance.</p>
-                    <a href="services.html">Learn More</a>
+            <div class="services-highlights-container">
+                <div class="before-after-container">
+                    <div class="before-image-container">
+                        <img id="beforeImage" src="before1.jpg" alt="Before Image 1">
+                        <img id="afterImage" src="after1.jpg" alt="After Image 1" class="after-image">
+                    </div>
+                    <button id="toggleImage" class="image-toggle-button">→</button>
                 </div>
-                <div class="service-highlight">
-                    <img src="IMG_2163.jpg" alt="Landscape Design">
-                    <h4>Landscape Design</h4>
-                    <p>Custom landscape design and installation.</p>
-                    <a href="services.html">Learn More</a>
+                <div class="horizontal-scroll-container">
+                    <div class="horizontal-scroll-images">
+                        <img src="project1.jpg" alt="Project 1">
+                        <img src="project2.jpg" alt="Project 2">
+                        <img src="project3.jpg" alt="Project 3">
+                        <img src="project4.jpg" alt="Project 4">
+                        <img src="project5.jpg" alt="Project 5">
+                    </div>
+                    <input type="range" min="0" max="100" value="50" class="scroll-speed-control">
                 </div>
             </div>
         </div>
@@ -60,5 +65,6 @@
         </div>
     </section>
 
+    <script src="service-highlights.js"></script>
 </body>
 </html>
