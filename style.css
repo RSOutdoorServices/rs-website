@@ -46,6 +46,7 @@ body {
     width: 100%;
     height: 100%;
     background-color: #00000040;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)); /* Gradient Overlay */
 }
 
 .hero-content {
@@ -82,6 +83,7 @@ body {
     background-size: cover;
     background-position: center;
     color: #FFFFFF;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)); /* Gradient Overlay */
 }
 
 .container {
@@ -94,17 +96,57 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 30px;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
 }
 
 .service-highlight {
     width: 300px;
     margin: 20px;
     text-align: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.service-highlight:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .service-highlight img {
     width: 100%;
     height: auto;
+    border-radius: 8px; /* Rounded image corners */
+    margin-bottom: 15px;
+}
+
+.service-highlight h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.service-highlight p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.service-highlight a {
+    background-color: #007BFF;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.service-highlight a:hover {
+    background-color: #0056b3;
 }
 
 #callToActionSection {
