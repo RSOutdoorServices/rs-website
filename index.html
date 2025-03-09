@@ -11,8 +11,8 @@
         <img id="siteLogo" src="1.png" alt="R.S. Outdoor Services Logo">
         <h1 id="siteName">R.S. Outdoor Services</h1>
         <nav id="mainMenu">
-            <a href="#servicesSection">Services</a>
-            <a href="#contactUsSection">Contact Us</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact Us</a>
         </nav>
     </header>
 
@@ -21,54 +21,44 @@
         <div class="hero-content">
             <h2 id="heroHeadline">Your Dream Outdoor Space, Realized.</h2>
             <p id="heroParagraph">R.S. Outdoor Services provides comprehensive landscaping and outdoor maintenance solutions. We are dedicated to creating beautiful and functional outdoor environments for our clients.</p>
-            <a href="#servicesSection" id="heroButton">View Our Services</a>
+            <a href="services.html" id="heroButton">View Our Services</a>
         </div>
     </section>
 
     <section id="aboutUsSection">
         <div class="container">
             <h3 id="aboutUsHeading">About R.S. Outdoor Services</h3>
-            <p id="aboutUsParagraph">We are a team of experienced professionals passionate about delivering high-quality outdoor services. Our goal is to exceed our clients' expectations and create lasting relationships.</p>
-            <div class="about-images">
-                <img src="placeholder-about1.png" alt="About Us 1">
-                <img src="placeholder-about2.png" alt="About Us 2">
-            </div>
+            <p id="aboutUsParagraph">We are a team of experienced professionals passionate about delivering high-quality outdoor services. Our goal is to exceed our clients' expectations and create lasting relationships. We have been serving the local community for over 10 years, and have built a reputation for providing reliable and high quality outdoor services.</p>
+            <p id="aboutUsParagraph">We are fully licensed and insured, and we are committed to providing our clients with the best possible service. Contact us today to learn more about how we can help you transform your outdoor space.</p>
         </div>
     </section>
 
-    <section id="servicesSection">
+    <section id="servicesHighlightsSection">
         <div class="container">
-            <h3 id="servicesHeading">Our Services</h3>
-            <div id="repeater1" class="repeater">
+            <h3 id="servicesHighlightsHeading">Service Highlights</h3>
+            <div class="services-highlights">
+                <div class="service-highlight">
+                    <img src="IMG_2147.jpg" alt="Lawn Care">
+                    <h4>Lawn Care</h4>
+                    <p>Professional lawn mowing and maintenance.</p>
+                    <a href="services.html">Learn More</a>
                 </div>
+                <div class="service-highlight">
+                    <img src="IMG_2163.jpg" alt="Landscape Design">
+                    <h4>Landscape Design</h4>
+                    <p>Custom landscape design and installation.</p>
+                    <a href="services.html">Learn More</a>
+                </div>
+            </div>
         </div>
     </section>
 
     <section id="callToActionSection">
         <div class="container">
             <h3 id="callToActionHeading">Ready to Transform Your Outdoor Space?</h3>
-            <a href="#contactUsSection" id="callToActionbutton">Contact Us for a Free Quote</a>
+            <a href="contact.html" id="callToActionbutton">Contact Us for a Free Quote</a>
         </div>
     </section>
 
-    <section id="contactUsSection">
-      <div class="container">
-        <h3>Contact Us</h3>
-        <form name="contact" netlify>
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required><br><br>
-
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required><br><br>
-
-          <label for="message">Message:</label><br>
-          <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
-
-          <button type="submit">Submit</button>
-        </form>
-      </div>
-    </section>
-
-    <script src="script.js"></script>
 </body>
 </html>
