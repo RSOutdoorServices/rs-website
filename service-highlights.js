@@ -4,19 +4,19 @@ document.addEventListener('DOMContentLoaded', function() {
     const afterImage = document.getElementById('afterImage');
     const toggleButton = document.getElementById('toggleImage');
 
-    let isBeforeVisible = true;
+    let isBeforeOnTop = true;
 
     toggleButton.addEventListener('click', function() {
-        if (isBeforeVisible) {
-            beforeImage.style.opacity = 0;
-            afterImage.style.opacity = 1;
+        if (isBeforeOnTop) {
+            beforeImage.style.zIndex = -2; // Move before image behind
+            afterImage.style.zIndex = -1; // Move after image in front
             toggleButton.textContent = '←';
         } else {
-            beforeImage.style.opacity = 1;
-            afterImage.style.opacity = 0;
+            beforeImage.style.zIndex = -1; // Move before image in front
+            afterImage.style.zIndex = -2; // Move after image behind
             toggleButton.textContent = '→';
         }
-        isBeforeVisible = !isBeforeVisible;
+        isBeforeOnTop = !isBeforeOnTop;
     });
 
     // Horizontal Scroll Control
