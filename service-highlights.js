@@ -3,11 +3,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const beforeImage = document.getElementById('beforeImage');
     const afterImage = document.getElementById('afterImage');
     const toggleButton = document.getElementById('toggleImage');
-    const beforeContainer = document.querySelector('.before-image-container')
+    const beforeContainer = document.querySelector('.before-image-container');
 
     let isBeforeOnTop = true;
 
-toggleButton.addEventListener('click', function() {
+    toggleButton.addEventListener('click', function() {
         if (isBeforeOnTop) {
             beforeContainer.style.transform = 'translateX(10px)';
             afterImage.style.transform = 'translateX(-10px)';
@@ -16,7 +16,8 @@ toggleButton.addEventListener('click', function() {
                 afterImage.style.zIndex = 2;
                 beforeContainer.style.transform = 'translateX(0)';
                 afterImage.style.transform = 'translateX(0)';
-            }, 200)
+                isBeforeOnTop = false; // Moved inside setTimeout
+            }, 200);
 
             toggleButton.textContent = '←';
         } else {
@@ -27,11 +28,11 @@ toggleButton.addEventListener('click', function() {
                 afterImage.style.zIndex = 1;
                 beforeContainer.style.transform = 'translateX(0)';
                 afterImage.style.transform = 'translateX(0)';
-            }, 200)
+                isBeforeOnTop = true; // Moved inside setTimeout
+            }, 200);
 
             toggleButton.textContent = '→';
         }
-        isBeforeOnTop = !isBeforeOnTop;
     });
 
     // Horizontal Scroll Control
