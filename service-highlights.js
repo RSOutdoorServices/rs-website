@@ -8,12 +8,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     toggleButton.addEventListener('click', function() {
         if (isBeforeOnTop) {
-            beforeImage.style.zIndex = -2; // Move before image behind
-            afterImage.style.zIndex = -1; // Move after image in front
+            beforeImage.style.zIndex = 1;
+            afterImage.style.zIndex = 2;
             toggleButton.textContent = '←';
         } else {
-            beforeImage.style.zIndex = -1; // Move before image in front
-            afterImage.style.zIndex = -2; // Move after image behind
+            beforeImage.style.zIndex = 2;
+            afterImage.style.zIndex = 1;
             toggleButton.textContent = '→';
         }
         isBeforeOnTop = !isBeforeOnTop;
