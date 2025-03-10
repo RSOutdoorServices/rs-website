@@ -3,17 +3,32 @@ document.addEventListener('DOMContentLoaded', function() {
     const beforeImage = document.getElementById('beforeImage');
     const afterImage = document.getElementById('afterImage');
     const toggleButton = document.getElementById('toggleImage');
+    const beforeContainer = document.querySelector('.before-image-container')
 
     let isBeforeOnTop = true;
 
-    toggleButton.addEventListener('click', function() {
+toggleButton.addEventListener('click', function() {
         if (isBeforeOnTop) {
-            beforeImage.style.zIndex = 1;
-            afterImage.style.zIndex = 2;
+            beforeContainer.style.transform = 'translateX(10px)';
+            afterImage.style.transform = 'translateX(-10px)';
+            setTimeout(function() {
+                beforeImage.style.zIndex = 1;
+                afterImage.style.zIndex = 2;
+                beforeContainer.style.transform = 'translateX(0)';
+                afterImage.style.transform = 'translateX(0)';
+            }, 200)
+
             toggleButton.textContent = '←';
         } else {
-            beforeImage.style.zIndex = 2;
-            afterImage.style.zIndex = 1;
+            beforeContainer.style.transform = 'translateX(-10px)';
+            afterImage.style.transform = 'translateX(10px)';
+            setTimeout(function() {
+                beforeImage.style.zIndex = 2;
+                afterImage.style.zIndex = 1;
+                beforeContainer.style.transform = 'translateX(0)';
+                afterImage.style.transform = 'translateX(0)';
+            }, 200)
+
             toggleButton.textContent = '→';
         }
         isBeforeOnTop = !isBeforeOnTop;
