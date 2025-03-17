@@ -3,60 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>R.S. Outdoor Services</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Your Landscape Company Name - Transform Your Outdoor Space</title>
+    <link rel="stylesheet" href="style.css"> <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <header id="siteHeader">
-        <img id="siteLogo" src="1.png" alt="R.S. Outdoor Services Logo">
-        <h1 id="siteName">R.S. Outdoor Services</h1>
-        <nav id="mainMenu">
-            <a href="services.html">Services</a>
-            <a href="contact.html">Contact Us</a>
-        </nav>
+        <div class="container header-container">
+            <a href="/" aria-label="Go to homepage">
+                <img id="siteLogo" src="logo.png" alt="Your Company Logo">
+            </a>
+            <h1 id="siteName">Your Landscape Company Name</h1>
+            <nav id="mainMenu">
+                <a href="/">Home</a>
+                <a href="#servicesHighlightsSection">Services</a>
+                <a href="#aboutUsSection">About Us</a>
+                <a href="#callToActionSection">Contact</a>
+            </nav>
+        </div>
     </header>
 
     <section id="heroSection">
         <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h2 id="heroHeadline">Your Dream Outdoor Space, Realized.</h2>
-            <p id="heroParagraph">R.S. Outdoor Services provides comprehensive landscaping and outdoor maintenance solutions. We are dedicated to creating beautiful and functional outdoor environments for our clients.</p>
-            <a href="services.html" id="heroButton">View Our Services</a>
+        <div class="hero-content container">
+            <h2 id="heroHeadline">Beautiful Landscapes Designed & Maintained</h2>
+            <p id="heroParagraph">Creating stunning outdoor spaces for homes and businesses in [Your Service Area].</p>
+            <a id="heroButton" href="#servicesHighlightsSection">Explore Our Services</a>
         </div>
     </section>
 
     <section id="aboutUsSection">
         <div class="container">
-            <h3 id="aboutUsHeading">About R.S. Outdoor Services</h3>
-            <p id="aboutUsParagraph">We are a team of experienced professionals passionate about delivering high-quality outdoor services. Our goal is to exceed our clients' expectations and create lasting relationships. We have been serving the local community for over 10 years, and have built a reputation for providing reliable and high quality outdoor services.</p>
-            <p id="aboutUsParagraph">We are fully licensed and insured, and we are committed to providing our clients with the best possible service. Contact us today to learn more about how we can help you transform your outdoor space.</p>
+            <h2>About Us</h2>
+            <p>Welcome to [Your Landscape Company Name]! We are passionate about creating and maintaining beautiful landscapes that enhance your property and lifestyle.  [Add a few sentences about your company's mission, values, and experience. E.g., "With over 10 years of experience...", "We are committed to...", etc.] </p>
+            <p> [Optional: Add more details about your team, certifications, or unique selling points here.] </p>
         </div>
     </section>
 
     <section id="servicesHighlightsSection">
         <div class="container">
-            <h3 id="servicesHighlightsHeading">Service Highlights</h3>
+            <h2>Our Services Highlights</h2>
             <div class="services-highlights-container">
+
                 <div class="before-after-container">
+                    <h3>Landscape Design & Installation</h3>
                     <div class="before-image-container">
-                        <img id="beforeImage" src="IMG_2147.jpg" alt="Before Image 1">
-                        <img id="afterImage" src="IMG_2163.jpg" alt="After Image 1" class="after-image">
+                        <img id="beforeImage" src="before.jpg" alt="Before landscape image">
+                        <img id="afterImage" src="after.jpg" alt="After landscape image" class="after-image">
                     </div>
-                    <button id="toggleImage" class="image-toggle-button">→</button>
-                </div>
+                    <button id="toggleImage" class="image-toggle-button" aria-pressed="false">→</button>
+                    <p class="image-caption">Swipe or Tap to Compare</p> </div>
+
                 <div class="highlights-text">
-                    <p>This is where your text goes. You can add descriptions of your services, testimonials, or any other relevant information.</p>
+                    <p><strong>Transform your yard with our expert landscape design and installation services.</strong> We handle everything from initial concept to final planting, creating outdoor spaces you'll love.</p>
                 </div>
+
                 <div class="horizontal-scroll-container">
+                    <h3>More of Our Work</h3>
                     <div class="horizontal-scroll-images">
-                        <img src="project1.jpg" alt="Project 1">
-                        <img src="project2.jpg" alt="Project 2">
-                        <img src="project3.jpg" alt="Project 3">
-                        <img src="project4.jpg" alt="Project 4">
-                        <img src="project5.jpg" alt="Project 5">
-                    </div>
-                    <input type="range" min="0" max="100" value="50" class="scroll-speed-control">
+                        <img src="service1.jpg" alt="Landscaping service image 1">
+                        <img src="service2.jpg" alt="Landscaping service image 2">
+                        <img src="service3.jpg" alt="Landscaping service image 3">
+                        <img src="service4.jpg" alt="Landscaping service image 4">
+                        </div>
+                    <label for="scrollSpeedControl" class="scroll-speed-label">Scroll Speed:</label>
+                    <input type="range" id="scrollSpeedControl" min="1" max="100" value="50" class="scroll-speed-control">
                 </div>
+
             </div>
         </div>
     </section>
@@ -64,10 +79,40 @@
     <section id="callToActionSection">
         <div class="container">
             <h3 id="callToActionHeading">Ready to Transform Your Outdoor Space?</h3>
-            <a href="contact.html" id="callToActionbutton">Contact Us for a Free Quote</a>
+            <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" id="contactForm">
+                <!-- Hidden field for Netlify form detection -->
+                <input type="hidden" name="form-name" value="contact">
+                <!-- Honeypot field to prevent spam (hidden from users) -->
+                <p hidden>
+                    <label>Don’t fill this out: <input name="bot-field"></label>
+                </p>
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="description">What do you want done?</label>
+                    <textarea id="description" name="description" rows="4" required></textarea>
+                </div>
+                <button type="submit" id="callToActionButton">Submit for a Free Quote</button>
+            </form>
         </div>
     </section>
 
-    <script src="service-highlights.js"></script>
-</body>
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Your Landscape Company Name. All rights reserved.</p>
+            <nav id="footerMenu">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="test.js"></script>
+    <script src="service-highlights.js"></script> </body>
 </html>
