@@ -349,6 +349,72 @@ body {
     background-color: #f0f0f0;
 }
 
+/* Services Section */
+#servicesSection {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #fff; /* Matches home page’s white sections */
+}
+
+#servicesSection h2 {
+    font-size: 32px;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+#servicesSection p {
+    max-width: 800px;
+    margin: 0 auto 30px;
+    color: #333;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.service-card {
+    background: #f8f8f8;
+    border-radius: 5px;
+    overflow: hidden; /* Keeps image corners neat */
+    text-align: left;
+}
+
+.service-card img {
+    width: 100%;
+    height: 200px; /* Fixed height for uniformity */
+    object-fit: cover; /* Crops images nicely */
+}
+
+.service-card h3 {
+    color: #4CAF50;
+    font-size: 20px;
+    margin: 15px 15px 10px;
+}
+
+.service-card p {
+    margin: 0 15px 15px;
+    font-size: 16px;
+    color: #333;
+}
+
+.cta-button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    display: inline-block;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background-color: #3d8b40;
+}
+
 /* Footer */
 footer {
     background-color: #f8f8f8;
