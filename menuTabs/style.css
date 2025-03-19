@@ -1,0 +1,591 @@
+/* style.css */
+
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Site Header */
+#siteHeader {
+    background-color: #f8f8f8;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#siteLogo {
+    height: 50px;
+    margin-right: 15px;
+}
+
+#siteName {
+    font-size: 24px;
+    color: #4CAF50;
+    margin: 0;
+}
+
+#mainMenu a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #555;
+    font-size: 16px;
+    transition: color 0.2s ease-in-out;
+}
+
+#mainMenu a:hover {
+    color: #4CAF50;
+}
+
+/* Hero Section (Home Page) */
+#heroSection {
+    background-image: url('background1.png');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 120px 0;
+    position: relative;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(60, 100, 40, 0.5));
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+#heroHeadline {
+    font-size: 36px;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+#heroParagraph {
+    font-size: 18px;
+    margin-bottom: 25px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#heroButton {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    display: inline-block;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#heroButton:hover {
+    background-color: #3d8b40;
+}
+
+/* Sections - About Us, Services Highlights, Call to Action */
+#aboutUsSection, #servicesHighlightsSection, #callToActionSection {
+    padding: 60px 0;
+    text-align: center;
+}
+
+#aboutUsSection {
+    background-image: url('about-background.png');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    background-image: linear-gradient(to top, rgba(60, 100, 40, 0.5), rgba(0, 0, 0, 0.3));
+}
+
+#servicesHighlightsSection h2, #aboutUsSection h2, #callToActionSection h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: inherit;
+}
+
+#servicesHighlightsSection p, #aboutUsSection p, #callToActionSection p {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    color: inherit;
+}
+
+/* Services Highlights Container (Home Page) */
+.services-highlights-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Before/After Image Feature (Home Page) */
+.before-after-container {
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.before-after-container h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.before-image-container {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+#beforeImage, #afterImage {
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+}
+
+.after-image {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    opacity: 1;
+    border: 3px solid #fff;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.image-toggle-button {
+    position: absolute;
+    top: 50%;
+    right: -15px;
+    transform: translateY(-50%);
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 3;
+    font-size: 1em;
+    line-height: 1;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.image-toggle-button:hover {
+    background-color: #3d8b40;
+}
+
+.image-caption {
+    font-size: 0.9em;
+    color: #777;
+    margin-top: 5px;
+}
+
+/* Highlights Text Section (Home Page) */
+.highlights-text {
+    width: 35%;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+/* Horizontal Scroll Section (Home Page) */
+.horizontal-scroll-container {
+    width: 30%;
+    overflow-y: auto;
+    max-height: 400px;
+    position: relative;
+    margin-left: 15px;
+}
+
+.horizontal-scroll-container h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: center;
+}
+
+.horizontal-scroll-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s linear;
+}
+
+.horizontal-scroll-images img {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.scroll-speed-label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.9em;
+    color: #555;
+    text-align: center;
+}
+
+.scroll-speed-control {
+    width: 100%;
+    height: 8px;
+    -webkit-appearance: none;
+    appearance: none;
+    background: #d3d3d3;
+    border-radius: 4px;
+    outline: none;
+    margin-top: 5px;
+}
+
+.scroll-speed-control::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    background: #4CAF50;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.scroll-speed-control::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    background: #4CAF50;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+/* Services Intro Section (Services Page) */
+#servicesIntro {
+    background-image: url('services-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 80px 0;
+    position: relative;
+}
+
+.intro-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(60, 100, 40, 0.6));
+}
+
+.intro-content {
+    position: relative;
+    z-index: 1;
+}
+
+#servicesIntro h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+/* Services Section (Services Page) */
+#servicesSection {
+    padding: 60px 0;
+    text-align: center;
+    background: linear-gradient(to bottom, #e8f5e9, #ffffff);
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.service-card {
+    background: linear-gradient(to bottom, #f8f8f8, #ffffff); /* Gradient for depth */
+    border: 1px solid #8B4513;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px); /* Lift on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
+}
+
+.service-card.offset {
+    margin-top: 20px;
+}
+
+.service-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 15px auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover img {
+    transform: scale(1.1);
+}
+
+.service-card h3 {
+    color: #4CAF50;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 15px 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.service-card p {
+    margin: 0 15px 15px;
+    font-size: 16px;
+    color: #333;
+}
+
+.cta-button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    display: inline-block;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background-color: #3d8b40;
+}
+
+/* Call to Action Section (Home Page) */
+#callToActionSection {
+    background-color: #8BC34A;
+    color: #fff;
+}
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.form-group label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+#callToActionButton {
+    background-color: #fff;
+    color: #8BC34A;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#callToActionButton:hover {
+    background-color: #f0f0f0;
+}
+
+/* Footer */
+footer {
+    background-color: #f8f8f8;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #eee;
+    color: #777;
+    font-size: 0.9em;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footerMenu a {
+    color: #777;
+    text-decoration: none;
+    margin-left: 15px;
+    transition: color 0.2s ease-in-out;
+}
+
+#footerMenu a:hover {
+    color: #555;
+}
+
+/* --- Media Queries for Responsiveness --- */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #siteLogo {
+        margin-bottom: 10px;
+    }
+
+    #siteName {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    #mainMenu {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    #mainMenu a {
+        margin-left: 0;
+        margin-right: 15px;
+        display: inline-block;
+    }
+
+    #heroSection, #servicesIntro {
+        padding: 80px 0;
+    }
+
+    #heroHeadline, #servicesIntro h2 {
+        font-size: 32px;
+    }
+
+    .services-highlights-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .before-after-container, .highlights-text, .horizontal-scroll-container {
+        width: 95%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .highlights-text {
+        text-align: center;
+    }
+
+    .horizontal-scroll-container {
+        max-height: 300px;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card.offset {
+        margin-top: 0;
+    }
+
+    footer .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #footerMenu {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    #footerMenu a {
+        margin-left: 0;
+        margin-right: 15px;
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        width: 90%;
+    }
+
+    #heroSection, #servicesIntro {
+        padding: 100px 0;
+    }
+
+    #heroHeadline, #servicesIntro h2 {
+        font-size: 40px;
+    }
+
+    .services-highlights-container {
+        flex-direction: row;
+    }
+
+    .before-after-container, .highlights-text, .horizontal-scroll-container {
+        width: 30%;
+    }
+}
+
+/* --- End Media Queries --- */
