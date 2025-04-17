@@ -1,0 +1,139 @@
+@media (max-width: 1260.98px) {
+    .service-single .content h1 {
+        font-size: 45px;
+        line-height: 40px;
+    }
+    .service-single .content p {
+        font-size: 20px;
+        font-weight: 400;
+        margin-top: 20px;
+        line-height: 24px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .nav-link {
+        font-size: 18px;
+    }
+
+    .banner {
+        padding-bottom: 3rem;
+    }
+
+    .banner .content h1 {
+        font-size: 40px;
+        line-height: 45px;
+    }
+
+    .banner .content h1 span {
+        font-size: 50px;
+    }
+
+    .banner .content p {
+        font-size: 17px;
+    }
+
+    .img-shape {
+        height: 4rem;
+    }
+
+    .headline {
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    .about-us .content p,
+    .design-ins .content p,
+    .design-ins p {
+        font-size: 17px;
+        line-height: 20px;
+    }
+
+    .about-us .content h6 {
+        font-size: 16px;
+    }
+    .our-services .headline{
+        font-size: 35px;
+    }
+    .our-services .headline span{
+        font-size: 50px;
+    }
+    .service-single .content h1 {
+        font-size: 28px;
+        line-height: 28px;
+    }
+    .service-single .content p {
+        font-size: 16px;
+        line-height: 17px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .navbar-nav {
+        margin-left: auto;
+        background:
+      #66923D;
+    }
+    .fixed-top .navbar-nav{
+        background: transparent;
+    }
+    .service-single {
+        margin:
+      30px 0;
+    }
+    .pl-10 {
+        padding-left: 0px;
+    }
+    .pr-10{
+        padding-right: 0;
+    }
+    .service-single .content p{
+        margin-top: 0;
+    }
+    .service-single .content h1{
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .banner .content h1 {
+        font-size: 33px;
+        line-height: 35px;
+    }
+
+    .banner .content h1 span {
+        font-size: 35px;
+    }
+
+    .headline,
+    .contact-us .headline {
+        font-size: 33px;
+        line-height: 35px;
+    }
+
+    .services-highlights .item .content h5 {
+        font-size: 16px;
+    }
+
+    .services-highlights .item .content p {
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .theme_btn {
+        font-size: 13px;
+    }
+
+    .footer .content {
+        margin:
+            5px 0;
+    }
+
+    .footer ul {
+        justify-content: center;
+    }
+
+    .footer h6 {
+        text-align: center;
+    }
+}
